@@ -1,0 +1,58 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+#hero {
+  min-height: 100vh;
+  width: 100%;
+  background: url('_images/painting-02.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  // background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  box-sizing: border-box;
+  #bob {
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(156,24,11,0.8);
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.25);
+    color: #fff;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      margin-top: -30px;
+      box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.2);
+    }
+    p {
+      padding: 25px 50px 0.5em;
+      line-height: 1.2em;
+      font-size: 2em;
+    }
+    p.small-txt {
+      font-size: 0.8em;
+      padding-top: 0.5em;
+      padding-bottom: 50px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+    #hero {
+      background: url('_images/mobile-painting-03.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      #bob {
+        background-color: rgba(67,66,117,0.8);
+        p {
+          padding: 20px 20px 50px 20px;
+        }
+      }
+    }
+}
