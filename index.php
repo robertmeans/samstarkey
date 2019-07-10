@@ -6,7 +6,7 @@
 <div id="hero">
 	<div id="bob">
 		<img src="_images/sam-starkey.jpg">
-		<p>Bob Means<br />
+		<p><a class="bob-means" href="http://www.evergreenbob.com" target="_blank">Bob Means</a><br />
 		is my hero</p>
 		<p class="small-txt">I got'cho website right here bro!</p>
 		<a class="down-arrow" href="#gallery"><i class="fas fa-caret-down"></i></a>
@@ -134,7 +134,7 @@
 
 </div><!-- #gallery -->
 <footer>
-	<p class="footer-txt">&copy;2019 Sam Starkey</p>
+	<p class="footer-txt">&copy;2019 Sam Starkey | Witch Doctor, Wet Nurse</p>
 </footer>
 
 <script src="js/masonry.pkgd.min.js?<?php echo time(); ?>"></script>

@@ -408,7 +408,7 @@ body {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  padding: 50px 0px;
+  padding: 50px 0px 100px;
   box-sizing: border-box;
 }
 #hero #bob {
@@ -439,17 +439,30 @@ body {
   padding-top: 0.5em;
   padding-bottom: 50px;
 }
+#hero #bob a.bob-means {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+#hero #bob a.bob-means:hover {
+  font-weight: bold;
+}
 #hero a.down-arrow {
   font-size: 3em;
   text-align: center;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  background-color: #d6ff14;
+  color: red;
   position: absolute;
   left: 50%;
   -ms-transform: translate(-50%, -20%);
       transform: translate(-50%, -20%);
   border: 1px solid #fff;
+  transition: all 0.1s ease;
+}
+#hero a.down-arrow:hover {
+  background-color: rgba(214, 255, 20, 0.3);
+  color: white;
 }
 #hero i.fa-caret-down {
   padding: 10px 20px;
@@ -531,12 +544,17 @@ footer p.footer-txt {
   border: 1px solid #fff;
   padding: 10px 18px;
   color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
 }
 .back-to-top:hover {
   background-color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
+  box-shadow: 0px 36px 20px -20px rgba(0, 0, 0, 0.2);
+  -ms-transform: translate(0px -10px);
+      transform: translate(0px -10px);
 }
 
 @media screen and (max-width: 665px) {
@@ -551,6 +569,15 @@ footer p.footer-txt {
   }
   #hero #bob p {
     padding: 20px 20px 50px 20px;
+  }
+  #hero #bob a.down-arrow {
+    background-color: #379fb3;
+  }
+  #hero #bob a.down-arrow:hover {
+    background-color: rgba(55, 159, 179, 0.6);
+  }
+  #hero #bob i.fa-caret-down {
+    color: #fff;
   }
 
   #gallery p.click-a-pic {
@@ -572,5 +599,10 @@ footer p.footer-txt {
 
   .grid-item--width2 {
     width: 300px;
+  }
+
+  footer p.footer-txt {
+    text-align: center;
+    margin: 0;
   }
 }
