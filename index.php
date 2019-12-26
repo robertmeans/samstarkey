@@ -6,9 +6,8 @@
 <div id="hero">
 	<div id="bob">
 		<img src="_images/sam-starkey.jpg">
-		<p><a class="bob-means" href="http://www.evergreenbob.com" target="_blank">Bob Means</a><br />
-		is my hero</p>
-		<p class="small-txt">I got'cho website right here bro!</p>
+		<p>Bohemian Catman</p>
+		<!-- <p class="small-txt"></p> -->
 		<a class="down-arrow" href="#gallery"><i class="fas fa-caret-down"></i></a>
 	</div><!-- #bob -->
 </div><!-- #hero -->
